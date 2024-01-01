@@ -92,7 +92,7 @@ test跟validation的区别是，理论上来说，validation的分布跟train的
 
  本次微调的基座模型采用Meta发布的`LLaMa-2-hf-7b-chat`版本
 
-<img src="NLP大作业技术报告   2301922   卢逸飞/image-20240101102501900.png" alt="image-20240101102501900" style="zoom:50%;" />
+<img src="images/image-20240101102501900.png" alt="image-20240101102501900" style="zoom:50%;" />
 
 `LLaMa2` 和 `LLaMa` 的模型结构基本一致，共用了 32 个 `decoder` 层。其中每个 `decoder` 层如上图右半部分所示，`LLaMa2` 主要是将 `Transformer` 中的 `Layer Norm` 换成了 `RMS Norm`，`Multi-Head Attention` 换成了 `GQA`（``LLaMa` 是 `MQA`）, `Positional Encoding `换成了 `Rotary Encoding`（`RoPE` 旋转位置编码），在前馈神经网络（`FFN`） 使用 `SwiGLU` 激活函数替换了 `Transformer` 中的 `ReLU` 激活函数。
 
@@ -169,7 +169,7 @@ cant_answer_template = [
 
 
 
-<img src="NLP大作业技术报告   2301922   卢逸飞/image-20240101152138111.png" alt="image-20240101152138111" style="zoom:50%;" />
+<img src="images/image-20240101152138111.png" alt="image-20240101152138111" style="zoom:50%;" />
 
 
 
@@ -181,7 +181,7 @@ cant_answer_template = [
 
 数据共`40w+`条，其中训练数据`313910`条，其余是验证数据，在单卡`A6000 48G显存`显卡上采用LoRA方式微调。
 
-<img src="NLP大作业技术报告   2301922   卢逸飞/image-20240101104514987.png" alt="image-20240101104514987" style="zoom:50%;" />
+<img src="images/image-20240101104514987.png" alt="image-20240101104514987" style="zoom:50%;" />
 
 可以看到原版`LLaMa2`是`7b`的权重,使用`LoRA`方式微调，训练参数仅为`0.3b`，为初始权重的`4%`左右，大大减少了需要训练的参数量。
 
@@ -261,7 +261,7 @@ print('模型的回复是：'sequences.generated_responses[-1])
 
 加载合并后的权重，3个测试样例如下：
 
-![image-20240101174138733](NLP大作业技术报告   2301922   卢逸飞/image-20240101174138733.png)
+![image-20240101174138733](images/image-20240101174138733.png)
 
 - 例子1和例子3回答正确
 
