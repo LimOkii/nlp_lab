@@ -6,7 +6,7 @@
 
 **选择的是方向1：**尝试对模型进行简单的指令微调，数据集可以是自己构造的、可以是开源的；
 
-**Github代码仓库：**https://github.com/LimOkii/nlp_lab.git
+**Github代码仓库：**https://github.com/LimOkii/nlp_lab
 
 
 
