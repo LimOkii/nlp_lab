@@ -1,14 +1,12 @@
 ##                    《自然语言处理》大作业技术报告   
 
-##                                  2301922   卢逸飞
-
 ## 1、实验简介
 
 **选题：《基于  https://github.com/hiyouga/LLaMA-Factory 开源项目跑通一个Chat机器人》**
 
 **选择的是方向1：**尝试对模型进行简单的指令微调，数据集可以是自己构造的、可以是开源的；
 
-**Github代码仓库：**
+**Github代码仓库：**https://github.com/LimOkii/nlp_lab.git
 
 
 
