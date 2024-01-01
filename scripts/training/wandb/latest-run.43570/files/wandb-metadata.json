@@ -1,0 +1,318 @@
+{
+    "os": "Linux-5.4.0-169-generic-x86_64-with-glibc2.31",
+    "python": "3.10.4",
+    "heartbeatAt": "2023-12-26T01:34:12.904632",
+    "startedAt": "2023-12-26T01:34:12.815393",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--deepspeed",
+        "ds_zero2_no_offload.json",
+        "--model_name_or_path",
+        "/data0/luyifei/llama-2-7b-chat/",
+        "--tokenizer_name_or_path",
+        "/data0/luyifei/llama-2-7b-chat/",
+        "--dataset_dir",
+        "/data0/luyifei/Chinese-LLaMA-Alpaca-2-main/process_data/",
+        "--per_device_train_batch_size",
+        "1",
+        "--per_device_eval_batch_size",
+        "1",
+        "--do_train",
+        "--do_eval",
+        "--seed",
+        "25514",
+        "--bf16",
+        "--num_train_epochs",
+        "1",
+        "--lr_scheduler_type",
+        "cosine",
+        "--learning_rate",
+        "1e-5",
+        "--warmup_ratio",
+        "0.03",
+        "--weight_decay",
+        "0",
+        "--logging_strategy",
+        "steps",
+        "--logging_steps",
+        "10",
+        "--save_strategy",
+        "steps",
+        "--save_total_limit",
+        "3",
+        "--evaluation_strategy",
+        "steps",
+        "--eval_steps",
+        "100",
+        "--save_steps",
+        "200",
+        "--gradient_accumulation_steps",
+        "8",
+        "--preprocessing_num_workers",
+        "8",
+        "--max_seq_length",
+        "512",
+        "--output_dir",
+        "output_dir",
+        "--overwrite_output_dir",
+        "--ddp_timeout",
+        "30000",
+        "--logging_first_step",
+        "True",
+        "--lora_rank",
+        "16",
+        "--lora_alpha",
+        "128",
+        "--trainable",
+        "q_proj,v_proj,k_proj,o_proj,gate_proj,down_proj,up_proj",
+        "--lora_dropout",
+        "0.05",
+        "--modules_to_save",
+        "embed_tokens,lm_head",
+        "--torch_dtype",
+        "float16",
+        "--validation_file",
+        "/data0/luyifei/Chinese-LLaMA-Alpaca-2-main/process_data/cant_answer_llama_valid_data.json",
+        "--load_in_kbits",
+        "16",
+        "--save_safetensors",
+        "False",
+        "--gradient_checkpointing",
+        "--ddp_find_unused_parameters",
+        "False"
+    ],
+    "state": "running",
+    "program": "/data0/luyifei/Chinese-LLaMA-Alpaca-2-main/scripts/training/run_clm_sft_with_peft.py",
+    "codePathLocal": "run_clm_sft_with_peft.py",
+    "codePath": "run_clm_sft_with_peft.py",
+    "host": "user",
+    "username": "luyifei",
+    "executable": "/data0/luyifei/.conda/envs/alpaca/bin/python",
+    "cpu_count": 20,
+    "cpu_count_logical": 40,
+    "cpu_freq": {
+        "current": 1360.1506749999999,
+        "min": 1000.0,
+        "max": 3200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1000.063,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1328.553,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.194,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.648,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.187,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3057.824,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.837,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1068.047,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.446,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1960.588,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1067.187,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1196.741,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1377.506,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1168.565,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1131.175,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.764,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2168.768,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1416.701,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1642.394,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.777,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.577,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1235.168,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.575,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.24,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1001.333,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 2901.547,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.25,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1072.164,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.557,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1797.714,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1055.968,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1617.113,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1923.146,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1115.55,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1190.58,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.438,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1423.606,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1186.345,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1403.652,
+            "min": 1000.0,
+            "max": 3200.0
+        },
+        {
+            "current": 1000.766,
+            "min": 1000.0,
+            "max": 3200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 195.8027114868164,
+            "used": 43.49064254760742
+        }
+    },
+    "gpu": "NVIDIA RTX A6000",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 51527024640
+        }
+    ],
+    "memory": {
+        "total": 125.55949783325195
+    }
+}
