@@ -230,7 +230,7 @@ $ python scripts/merge_llama2_with_chinese_lora_low_mem.py \
 - `--output_dir`：指定保存全量模型权重的目录，默认为`./`
 - （可选）`--verbose`：显示合并过程中的详细信息
 
-![image-20240101161620803](NLP大作业技术报告   2301922   卢逸飞/image-20240101161620803.png)
+![image-20240101161620803](images/image-20240101161620803.png)
 
 
 
